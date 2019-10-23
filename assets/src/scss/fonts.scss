@@ -1,0 +1,26 @@
+$fonts: (
+        lie_to_me: (
+                regular: (style: normal, weight: normal),
+        )
+);
+
+@each $font in $fonts {
+  $fontName: nth($font, 1);
+  $weights: nth($font, 2);
+  $path: './fonts/#{$fontName}';
+  @each $weight in $weights {
+    $weightName: nth($weight, 1);
+    $styles: nth($weight, 2);
+    @font-face {
+      font-family: '#{$fontName}';
+      src: url('#{$path}/#{$fontName}-#{$weightName}.eot'); /* IE9 Compat Modes */
+      src: url('#{$path}/#{$fontName}-#{$weightName}.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('#{$path}/#{$fontName}-#{$weightName}.woff2') format('woff2'), /* Modern Browsers */
+      url('#{$path}/#{$fontName}-#{$weightName}.woff') format('woff'), /* Modern Browsers */
+      url('#{$path}/#{$fontName}-#{$weightName}.ttf') format('truetype');
+      font-style: map-get($styles, style);
+      font-weight: map-get($styles, weight);
+      text-rendering: optimizeLegibility;
+    }
+  }
+}

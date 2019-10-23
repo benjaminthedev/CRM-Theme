@@ -1,0 +1,101 @@
+// Footer Logo
+
+.footer_logo {
+  padding: 1.5rem 0;
+  text-align: center;
+  img {
+    max-width: 66px;
+  }
+}
+
+// Main Footer
+
+#main_footer {
+  padding: 3.75rem 0;
+  color: #fff;
+  font-weight: 300;
+  h5 {
+    font-size: 1rem;
+    margin: 0 0 1rem;
+  }
+  a {
+    color: #fff;
+  }
+  .menu_block {
+    @include media-breakpoint-down(lg) {
+      max-width: 50%;
+      flex: 0 0 50%;
+    }
+    @include media-breakpoint-down(md) {
+      max-width: 100%;
+      flex: 0 0 100%;
+    }
+    &:first-of-type {
+      @include media-breakpoint-down(lg) {
+        max-width: 100%;
+        flex: 0 0 100%;
+      }
+    }
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      li {
+        margin: 0 0 .5rem;
+        @include media-breakpoint-down(lg) {
+          float: left;
+          margin: 0 .5rem 1rem 0;
+
+        }
+      }
+    }
+  }
+  .contact, .footer_meta {
+    @include media-breakpoint-down(xs) {
+      max-width: 100%;
+      flex: 0 0 100%;
+    }
+  }
+  .contact_block {
+    margin: 0 0 1rem;
+    a {
+      display: block;
+    }
+    @include media-breakpoint-down(lg) {
+      float: left;
+      margin: 0 1rem 1rem 0;
+    }
+  }
+  .footer_meta {
+    .wpcf7 {
+      position: relative;
+      padding: 0 3.125rem 0 0;
+      @include media-breakpoint-up(xl) {
+        width: 340px;
+      }
+      .wpcf7-submit {
+        @extend .btn-danger;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 0.5625rem;
+        border: none;
+        width: 3.125rem;
+      }
+      .form-control {
+        padding: .6875rem 1rem;
+        text-align: left;
+      }
+    }
+  }
+  .social_links {
+    padding:0;
+    margin: 1rem 0;
+    list-style: none;
+    font-size: 1.625rem;
+    li {
+      float: left;
+      margin: 0 1rem 0 0;
+    }
+  }
+}
