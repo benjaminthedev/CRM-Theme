@@ -1,6 +1,6 @@
 <?php
 
-$class = is_user_logged_in() ? 'logged_in' : 'logged_out';
+//$class = is_user_logged_in() ? 'logged_in' : 'logged_out';
 
 
 ?>

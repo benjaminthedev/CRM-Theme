@@ -39,4 +39,17 @@ require_once 'includes/duplicate_post.php';
 /* =============== Add Users ===============  */
 require_once 'includes/add_users.php';
 
+
+
+/* =============== Add Users ===============  */
+register_sidebar(
+    array(
+        'name' => 'Home Sidebar',
+        'before_widget' => '<div class="sub clearfix %2$s">',  
+        'after_widget' => '</div>',  
+        'before_title' => '<header><h4>',  
+        'after_title' => '</h4></header>',  
+    ));
+
+
 ?>

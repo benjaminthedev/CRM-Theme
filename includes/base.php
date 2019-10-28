@@ -160,12 +160,12 @@ function pd_img_unautop($imgWrap)
 
 /* =============== topclick Credits =============== */
 
-function my_admin_footer_text($default_text)
-{
-    return '<span id="footer-thankyou">Website built by <a href="http://www.topclick"><span style="color: #a3223b">topclick</span></a><span> | Powered by <a href="http://www.wordpress.org">WordPress</a>';
-}
+// function my_admin_footer_text($default_text)
+// {
+//     return '<span id="footer-thankyou">Website built by <a href="http://www.topclick"><span style="color: #a3223b">topclick</span></a><span> | Powered by <a href="http://www.wordpress.org">WordPress</a>';
+// }
 
-add_filter('admin_footer_text', 'my_admin_footer_text');
+// add_filter('admin_footer_text', 'my_admin_footer_text');
 
 
 /* =============== Display on the admin bar what template is used  =============== */
@@ -360,21 +360,21 @@ add_filter('woocommerce_enqueue_styles', '__return_empty_array');
 
 /* =============== Woocommerce Removes links  =============== */
 
-add_filter('woocommerce_product_is_visible', 'product_invisible');
-function product_invisible()
-{
-    return false;
-}
+// add_filter('woocommerce_product_is_visible', 'product_invisible');
+// function product_invisible()
+// {
+//     return false;
+// }
 
 /* =============== Woocommerce Remove single page  =============== */
 
-add_filter('woocommerce_register_post_type_product', 'hide_product_page', 12, 1);
-function hide_product_page($args)
-{
-    $args["publicly_queryable"] = false;
-    $args["public"] = false;
-    return $args;
-}
+// add_filter('woocommerce_register_post_type_product', 'hide_product_page', 12, 1);
+// function hide_product_page($args)
+// {
+//     $args["publicly_queryable"] = false;
+//     $args["public"] = false;
+//     return $args;
+// }
 
 
 /* =============== Woocommerce Add Custom Meta =============== */

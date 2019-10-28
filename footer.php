@@ -73,7 +73,7 @@
 
                 <?php if (have_rows('social_links', 'options')) get_section('footer/social_links') ?>
 
-                <a href="http://topclick.com">Website by topclick</a>
+                
 
             </div>
 

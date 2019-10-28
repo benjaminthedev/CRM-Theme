@@ -1,14 +1,14 @@
 <?php
 /**
- * Created by PhpStorm.
+
  * User: benjaminthdev
  * Date: 12/07/2017
  * Time: 10:33
  * Template Name: Register
  */
 
-if (is_user_logged_in())
-    wp_redirect(get_permalink(get_option('woocommerce_myaccount_page_id')), 301);
+//if (is_user_logged_in())
+    //wp_redirect(get_permalink(get_option('woocommerce_myaccount_page_id')), 301);
 
 
 get_header();
