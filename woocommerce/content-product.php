@@ -40,7 +40,9 @@ $price_html_text = $rrp_html ? 'Discounted Price' : 'Our Price';
 
 ?>
 
-<div <?php post_class('col-xxl-6 col-lg-4 col-md-6'); ?>>
+<!-- <div <?php //post_class('col-xxl-6 col-lg-4 col-md-4'); ?>> -->
+
+<div <?php post_class('newProduct'); ?>>
 
     <div class="row flex-align-sm-center">
 
@@ -91,3 +93,40 @@ $price_html_text = $rrp_html ? 'Discounted Price' : 'Our Price';
     </div>
 
 </div>
+
+<style>
+/* .post-type-archive-product ul.products{
+    display: flex !important;
+}
+
+.post-type-archive-product div#primary {
+    width: 70%;
+    float: left;
+    margin-top: 70px;
+    padding: 30px;
+}
+
+.post-type-archive-product div#sidebar {
+    width: 30%;
+    float: left;
+    padding: 30px;
+    margin-top: 70px;
+}
+
+.post-type-archive-product nav.woocommerce-breadcrumb {
+    display: none;
+}
+
+.post-type-archive-product header.woocommerce-products-header {
+    display: none;
+}
+
+.post-type-archive-product img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
+    width: 60%;
+}
+.post-type-archive-product form.woocommerce-ordering {
+    display: none;
+} */
+
+
+</style>

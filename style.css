@@ -6,3 +6,37 @@ Version: 3.0
 Author: BenjaminTheDev
 Author URI: https://benjaminthedev.github.io/
 */
+
+
+.post-type-archive-product ul.products{
+    display: flex !important;
+}
+
+.post-type-archive-product div#primary {
+    width: 70%;
+    float: left;
+    margin-top: 70px;
+    padding: 30px;
+}
+
+.post-type-archive-product div#sidebar {
+    width: 30%;
+    float: left;
+    padding: 30px;
+    margin-top: 70px;
+}
+
+.post-type-archive-product nav.woocommerce-breadcrumb {
+    display: none;
+}
+
+.post-type-archive-product header.woocommerce-products-header {
+    display: none;
+}
+
+.post-type-archive-product img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
+    width: 60%;
+}
+.post-type-archive-product form.woocommerce-ordering {
+    display: none;
+}

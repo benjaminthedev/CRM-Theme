@@ -2,9 +2,9 @@
 /**
 
  * User: benjaminthdev
- * Date: 13/07/2017
+ * Date: 
  * Time: 09:29
- * Template Name: About
+ * Template Name: New Products Page 2
  */
 
 get_header();
@@ -17,13 +17,27 @@ if (have_posts())
 
             <div class="container">
 
+            <div class="row">
+                <div class="col-md-12">
+                <h1> Price List</h1>
+                <?php the_content(); ?>
+                
+</div>
+
+
+
+              
+
+
+
+
                 <div class="row text-center flex-align-lg-center ">
 
                     <div class="<?php echo has_post_thumbnail() ? 'col-lg-8 ' : 'col-xs-12'; ?>">
 
-                        <h1><?php the_title(); ?></h1>
+                        <h1><?php //the_title(); ?></h1>
 
-                        <?php the_content(); ?>
+                        <?php //the_content(); ?>
 
                     </div>
 

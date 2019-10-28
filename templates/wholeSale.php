@@ -1,6 +1,6 @@
 <?php
 /**
- * Created by PhpStorm.
+
  * User: benjaminthdev
  * Date: 13/07/2017
  * Time: 09:29
@@ -16,6 +16,11 @@ if (have_posts())
         <section class="content_section info_bg">
 
             <div class="container">
+
+            <h2>Upload your order</h2>
+
+            <?php echo do_shortcode('[quick_order]'); ?>
+            
 
                 <div class="row text-center flex-align-lg-center ">
 
