@@ -70,6 +70,8 @@ $price_html_text = $rrp_html ? 'Discounted Price' : 'Our Price';
 
                 <?php echo $price_html ? "<div class='our_price'>$price_html_text $price_html</div> " : ""; ?>
 
+                <p>SKU: <?php echo $product->get_sku(); ?></p>
+
             </div>
 
             <?php

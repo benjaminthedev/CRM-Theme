@@ -8,7 +8,6 @@
 
 </footer>
 
-
 <footer id="main_footer" class="primary_bg">
 
     <div class="container">
