@@ -52,4 +52,6 @@ register_sidebar(
     ));
 
 
+
+
 ?>
