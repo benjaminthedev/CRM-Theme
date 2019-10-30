@@ -19,6 +19,8 @@ if (have_posts())
 
             <h2>Upload your order</h2>
 
+            <h3 class="text-center"><a href="https://wordpress-334141-1027182.cloudwaysapps.com/wp-content/uploads/2019/10/quick-order.csv" ><i>Download The CSV Template File</i></a></h3>
+
             <?php echo do_shortcode('[quick_order]'); ?>
             
 
@@ -26,9 +28,9 @@ if (have_posts())
 
                     <div class="<?php echo has_post_thumbnail() ? 'col-lg-8 ' : 'col-xs-12'; ?>">
 
-                        <h1><?php the_title(); ?></h1>
+                        <h1><?php //the_title(); ?></h1>
 
-                        <?php the_content(); ?>
+                        <?php //the_content(); ?>
 
                     </div>
 

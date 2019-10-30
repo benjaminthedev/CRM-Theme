@@ -17,6 +17,14 @@ if (have_posts())
 
     <?php endwhile;
 
-get_section('contact_form');
+//get_section('contact_form');
 
-get_footer();
+get_footer(); ?>
+
+<style>
+
+    .woocommerce-account div#product_feed_loader,
+    .woocommerce-account section#account_basket {
+    display: none;
+}
+</style>

@@ -13564,7 +13564,7 @@ ul li ul.sub-menu li {
 }
 ul li ul.sub-menu li a {
  color:#fff;
- padding: 1rem 2rem !important;
+ padding: 1rem 1.65rem !important;
 }
 
 
@@ -14131,7 +14131,7 @@ ul li ul.sub-menu li a {
     }
 }
 
-.team_profile:before {
+/* .team_profile:before {
     content: "";
     height: 1px;
     width: 100%;
@@ -14141,9 +14141,77 @@ ul li ul.sub-menu li a {
     left: 0;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%)
+} */
+
+.page-id-5830 ul.products {
+    display: flex !important;
+}
+.image-wrap {
+    width: 6%;
+}
+.image-wrap img {
+    max-width: 90% !important;
+}
+ul.products{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
 }
 
-.team_profile .image {
+ul.products .newProduct {
+   flex-direction: row;
+}
+
+.product-wrap {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: row;
+}
+.info-cost {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+.page-id-5380 .checkouts {
+    /* display: flex;
+    flex-direction: row; */
+    display: none !important;
+}
+
+
+
+
+
+
+label.screen-reader-text {
+    display: none !important;
+}
+
+
+.team_profile .image{
+    display:none;
+}
+.customer_profile{
+    background: #f0e3da;
+    text-align: center;
+    padding: 50px 0;
+}
+h2.account_heading_top {
+    margin-bottom: 40px;
+}
+h3.account_heading {
+    margin: 40px;
+}
+h3.account_heading_two {
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+/* .team_profile .image {
     width: 300px;
     max-width: 100%;
     text-align: center;
@@ -14182,7 +14250,7 @@ ul li ul.sub-menu li a {
     transform: translate(-50%, -50%);
     transition: opacity .4s ease-in-out;
     opacity: 0
-}
+} */
 
 .team_profile .team_info {
     padding: 4rem 2rem;
