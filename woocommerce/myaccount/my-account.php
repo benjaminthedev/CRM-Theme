@@ -33,17 +33,8 @@ $avatar = get_avatar(get_current_user_id(), 470);
 
 <div class="container">
 
-    <div class="team_profile account">
 
-        <div class="image">
-
-            <?php echo $avatar; ?>
-
-            <a href='http://en.gravatar.com/' target="_blank" class="btn btn-danger">Change Gravatar</a>
-
-        </div>
-
-        <div class="team_info warning_bg clearfix">
+        <div class="customer_profile">       
 
             <div class="account_inner">
 
@@ -58,12 +49,19 @@ $avatar = get_avatar(get_current_user_id(), 470);
 
 
                 ?>
+                
 
             </div>
 
         </div>
 
-    </div>
+
+
+
+
+
+
+    
 
 </div>
 

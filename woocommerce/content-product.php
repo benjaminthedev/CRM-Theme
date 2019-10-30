@@ -44,41 +44,39 @@ $price_html_text = $rrp_html ? 'Discounted Price' : 'Our Price';
 
 <div <?php post_class('newProduct'); ?>>
 
-    <div class="row flex-align-sm-center">
+    <!-- <div class="row flex-align-sm-center"> -->
+        <div class="new-wrap">
 
-        <div class="col-auto">
-
-            <?php echo preg_replace('/(<[^>]+) sizes=".*?"/i', '$1', woocommerce_get_product_thumbnail()); ?>
-
-        </div>
-
-        <div class="col">
-
-            <div class="title">
-
-                <?php the_title(); ?>
-
-                <?php echo $secondary_title ? "<div class='subtitle'>$secondary_title</div>" : ''; ?>
-
+<div class="product-wrap">
+        <!-- <div class="col-auto"> -->
+            <div class="image-wrap">
+                <?php echo preg_replace('/(<[^>]+) sizes=".*?"/i', '$1', woocommerce_get_product_thumbnail()); ?>
             </div>
 
-            <?php echo $ean ? "<div class='ean'>Product Code:<br> $ean</div>" : ''; ?>
+        <div class="product-info">
+        
+        <div class="info-cost">
+            <div class="title">
+                <?php the_title(); ?>
+                <?php echo $secondary_title ? "<div class='subtitle'>$secondary_title</div>" : ''; ?>
+            </div>
+
+            <div class="product-sku">
+                <?php echo $ean ? "<div class='ean'>Product Code:<br> $ean</div>" : ''; ?>
+                <p class="mb-0">SKU: <?php echo $product->get_sku(); ?></p>    
+            </div>  
 
             <div class="price">
-
                 <?php echo $rrp_html ? "<div class='rrp'>Our Price $rrp_html</div> " : ""; ?>
-
                 <?php echo $price_html ? "<div class='our_price'>$price_html_text $price_html</div> " : ""; ?>
+           </div>
+        </div>
 
-                <p>SKU: <?php echo $product->get_sku(); ?></p>
-
-            </div>
-
+        <div class="checkouts">
             <?php
-
             get_section('account/add_to_cart', ['product' => $product, 'class' => 'hidden-xxxxl-up']);
-
             ?>
+        </div>
 
         </div>
 
@@ -91,7 +89,7 @@ $price_html_text = $rrp_html ? 'Discounted Price' : 'Our Price';
             ?>
 
         </div>
-
+        </div>
     </div>
 
 </div>

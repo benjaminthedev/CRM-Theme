@@ -55,7 +55,7 @@ $billing_email = get_user_meta($customer_id, 'billing_email', true);
 
 ?>
 
-    <h2>Your Account</h2>
+    <!-- <h2 class="account_heading_top">Your Account</h2> -->
 
 <?php echo $address_data['company'] ? "<h3>{$address_data['company']}</h3>" : '' ?>
 
@@ -79,12 +79,22 @@ $billing_email = get_user_meta($customer_id, 'billing_email', true);
 
 <div class="account_links">
 
-    <h3>Account Controls</h3>
+    <h3 class="account_heading"> My Account</h3>
 
     <a href="<?php echo esc_url( wc_get_endpoint_url( 'edit-address', 'billing' ) ); ?>" class="btn btn-danger btn-sm">Address</a>
 
     <a href="<?php echo esc_url( wc_get_endpoint_url( 'edit-account') ); ?>" class="btn btn-danger btn-sm">Account Details</a>
 
     <a href="<?php echo esc_url( wc_get_endpoint_url( 'orders') ); ?>" class="btn btn-danger btn-sm">Your Orders</a>
+
+    <br />
+    <h3 class="account_heading_two">Order Now</h3>
+    <br />
+
+    <a href="/price-list/" class="btn btn-danger btn-sm">Price List</a>
+
+    <a href="/quick-order/" class="btn btn-danger btn-sm">Quick Order</a>
+
+    <a href="/faqs/" class="btn btn-danger btn-sm">FAQs</a>
 
 </div>

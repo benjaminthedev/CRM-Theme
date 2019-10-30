@@ -6,7 +6,7 @@
  * Time: 09:29
  * Template Name: Products Page
  */
-
+        
 get_header();
 
 if (have_posts())
