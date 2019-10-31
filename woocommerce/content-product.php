@@ -56,15 +56,19 @@ $price_html_text = $rrp_html ? 'Discounted Price' : 'Our Price';
         <div class="product-info">
         
         <div class="info-cost">
-            <div class="title">
-                <?php the_title(); ?>
-                <?php echo $secondary_title ? "<div class='subtitle'>$secondary_title</div>" : ''; ?>
-            </div>
 
             <div class="product-sku">
                 <?php echo $ean ? "<div class='ean'>Product Code:<br> $ean</div>" : ''; ?>
                 <p class="mb-0">SKU: <?php echo $product->get_sku(); ?></p>    
             </div>  
+
+
+            <div class="title">
+                <?php the_title(); ?>
+                <?php echo $secondary_title ? "<div class='subtitle'>$secondary_title</div>" : ''; ?>
+            </div>
+
+
 
             <div class="price">
                 <?php echo $rrp_html ? "<div class='rrp'>Our Price $rrp_html</div> " : ""; ?>
