@@ -68,7 +68,10 @@
 
                 <h5>Sign up for updates</h5>
 
-                <?php echo do_shortcode('[contact-form-7 id="96" title="Mailchimp Form"]') ?>
+                <?php //echo do_shortcode('[contact-form-7 id="96" title="Mailchimp Form"]') ?>
+
+
+                 <?php echo do_shortcode('[mc4wp_form id="5585"]') ?>
 
                 <?php if (have_rows('social_links', 'options')) get_section('footer/social_links') ?>
 
