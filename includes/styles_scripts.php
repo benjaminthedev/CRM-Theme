@@ -13,6 +13,8 @@ if (!function_exists('theme_scripts')) {
     {
         $public_dir = get_public_dir_uri();
         wp_enqueue_script('main', "$public_dir/app.js", [], null, true);
+
+        wp_enqueue_script('custom', "$public_dir/custom.js", [], null, true);
     }
 }
 
