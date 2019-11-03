@@ -54,7 +54,7 @@ $billing_phone = get_user_meta($customer_id, 'billing_phone', true);
 $billing_email = get_user_meta($customer_id, 'billing_email', true);
 
 ?>
-
+    
     <!-- <h2 class="account_heading_top">Your Account</h2> -->
 
 <?php echo $address_data['company'] ? "<h3>{$address_data['company']}</h3>" : '' ?>

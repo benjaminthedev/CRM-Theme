@@ -39,3 +39,13 @@ get_header();?>
     display: none;
 }
 </style>
+
+<script>
+//Address
+
+    let address = document.getElementsByTagName('address')[0];
+
+    address.innerHTML = address.textContent.replace(/,/g, '<br>');
+
+    console.log(address);
+    </script>
