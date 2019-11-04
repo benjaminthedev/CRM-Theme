@@ -17,7 +17,7 @@ if (have_posts())
 
             <div class="container">
 
-                <div class="row text-center flex-align-lg-center ">
+                <div class=" ">
 
                     <div class="<?php echo has_post_thumbnail() ? 'col-lg-8 ' : 'col-xs-12'; ?>">
 
