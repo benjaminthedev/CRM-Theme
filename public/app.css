@@ -14198,6 +14198,8 @@ ul.products .newProduct:nth-of-type(even) {
 .title, .product-sku, .price {
     margin-right: 20px;
     margin-top:12px;
+}.ean {
+    display: none;
 }
 .page-id-5380 .checkouts {
     /* display: flex;
@@ -14206,21 +14208,40 @@ ul.products .newProduct:nth-of-type(even) {
 }
 
 
+/*--- Checkout Page ---*/
 
+.page-id-21 .col-1,
+.page-id-21 .col-xs-12, 
+.page-id-21 .col-2{
+    max-width: 100% !important;
+    width: 100% !important;
 
-/* -- Billing page -- */
+}
 
-.page-id-22 form {
+.page-id-21 .woocommerce-additional-fields {
+    margin-top: 100px;
+}
+
+.page-id-21 textarea#order_comments {
     width: 50%;
-    margin: 0 auto;
+    clear: both !important;
 }
 
-.page-id-22 input {
-    width: 100%;
-    padding:10px;
+.page-id-21 label {
+    display: none;
 }
 
-/* -- Billing page end -- */
+.page-id-21 h3#order_review_heading {
+    margin-top: 40px;
+}
+
+/*--- Checkout Page End ---*/
+
+
+
+
+/*-- Woo General --*/
+
 /*****************************************************/
 /******** WOO CART / CHECKOUT / ACCOUNT PAGES ********/
 /*****************************************************/
@@ -14237,7 +14258,7 @@ ul.products .newProduct:nth-of-type(even) {
 h3#order_review_heading,
 form.woocommerce-EditAccountForm.edit-account {
 	border: 0 !important; /* you can add a border if you prefer */
-	background: #f5f5f5; /* this is the main background color for all forms */
+	background: #f0e3da; /* this is the main background color for all forms */
 }
 /*** FORM AND OTHER PADDING ***/
 #customer_details,
@@ -14293,8 +14314,9 @@ h3#ship-to-different-address {
 .woocommerce button.button,
 .woocommerce-page button.button {
 	text-transform: capitalize !important;
-	background: #ffa500 !important;
-	color: #222 !important;
+	background: #d32041 !important;
+    color: #fff !important;
+    padding: 20px;
 } 
 .woocommerce button.button.alt:hover, 
 .woocommerce-page button.button.alt:hover,
@@ -14304,14 +14326,15 @@ h3#ship-to-different-address {
 .woocommerce-page a.button:hover,
 .woocommerce button.button:hover,
 .woocommerce-page button.button:hover {
-	background: #00adad !important;
+	background: #a71933 !important;
 	color: #fff !important;
 }
 /*** PAYMENT BOX ON CHECKOUT ***/
 #add_payment_method #payment div.payment_box, 
 .woocommerce-cart #payment div.payment_box, 
 .woocommerce-checkout #payment div.payment_box {
-	background-color: #15bf86;
+    background-color: #d32041;
+    padding: 20px 0;
 	color: #fff;
 }
 #add_payment_method #payment div.payment_box::before, 
@@ -14381,6 +14404,58 @@ h3#ship-to-different-address {
 }
 
 
+.page-id-20 td.product-thumbnail {
+    max-width: 10% !important;
+    width: 10% !important;
+}
+
+.page-id-20 table.shop_table.shop_table_responsive {margin-bottom: 40px;background: #f0e3da;}
+
+.page-id-20 .cart-collaterals {
+    background: #f0e3da;
+    padding: 30px 0px;
+}
+
+.page-id-20 form.woocommerce-cart-form {
+    padding: 41px 0;
+    background: #f0e3da;
+}
+
+.page-id-20 li.wc_payment_method.payment_method_bacs {
+    list-style-type: none;
+}
+
+ul.woocommerce-order-overview.woocommerce-thankyou-order-details.order_details li {
+    list-style-type: none !important;
+}
+
+.page-id-22 .woocommerce a.button, .page-id-22 .woocommerce-page a.button{
+    background: none!important;
+    color: #000 !important;
+}
+
+/*-- Woo General END --*/
+
+
+
+
+
+/* -- Billing page -- */
+
+.page-id-22 form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* .page-id-22 input {
+    width: 100%;
+    padding:10px;
+} */
+
+/* -- Billing page end -- */
+
+
+
 /* -- Basket page -- */
 .page-is-20 .product-thumbnail a img {
     width: 10% !important;
@@ -14400,6 +14475,34 @@ h3#ship-to-different-address {
     font-size: .875rem;
     border-radius: 0;
 }
+
+/*--  Billing Page  --*/
+
+input#billing_company,
+input#billing_first_name,
+input#billing_last_name,
+input#billing_address_1,
+input#billing_address_2,
+input#billing_city,
+input#billing_state,
+input#billing_postcode,
+input#billing_phone,
+input#billing_email{
+    text-align:center;
+    display: block;
+    width: 100%;
+    padding: 1.4rem .75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #464a4c;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border: 0 solid rgba(0, 0, 0, .15);
+    border-radius: 0;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
 
 
 /* -- Basket page end -- */
