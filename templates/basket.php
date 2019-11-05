@@ -64,3 +64,5 @@ get_section('new_arrivals');
 get_section('contact_form');
 
 get_footer();
+
+

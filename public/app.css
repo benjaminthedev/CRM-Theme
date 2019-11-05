@@ -14285,22 +14285,22 @@ h3#order_review_heading {
 }
 /*** COUPON FIELD ONLY ***/
 .woocommerce-page #coupon_code.input-text { /* if you want your coupon different from other fields */
-	background-color: black !important;
-	color: blue !important;
+	background-color: #fff !important;
+	color: #000 !important;
 	font-size: 16px !important; /* if you don't want the default giant font on the coupon field */
 }
 /*** PLACEHOLDER TEXT ON ALL WOO PAGES ***/
 .woocommerce-page ::-webkit-input-placeholder {
-    color: red !important;
+    color: #000 !important;
 }
 .woocommerce-page :-ms-input-placeholder {
-    color: red !important;
+    color: #000 !important;
 }
 .woocommerce-page ::-moz-placeholder {
-    color: red !important;
+    color: #000 !important;
 }
 .woocommerce-page :-moz-placeholder { /* this isn't the same as above don't delete */
-    color: red !important; 
+    color: #000 !important; 
 }
 /*** THIS COMPENSATES FOR SHIP TO DIFF ADDRESS FIELD NOT ALIGNING ***/
 h3#ship-to-different-address {
@@ -14398,8 +14398,8 @@ h3#ship-to-different-address {
 .woocommerce-cart table.cart td.actions .coupon .input-text, 
 .woocommerce-page #content .quantity input.qty,
 .woocommerce-page .quantity input.qty {
-	color: #fff !important;
-	background: #222 !important;
+	color: #000 !important;
+	background: #fff !important;
 	height: 46px; /* you may need to change this based on your font size */
 }
 
@@ -14412,7 +14412,7 @@ h3#ship-to-different-address {
 .page-id-20 table.shop_table.shop_table_responsive {margin-bottom: 40px;background: #f0e3da;}
 
 .page-id-20 .cart-collaterals {
-    background: #f0e3da;
+    /* background: #f0e3da; */
     padding: 30px 0px;
 }
 
