@@ -68,10 +68,6 @@ $avatar = get_avatar(get_current_user_id(), 470);
 
     tableNew1.classList.add('table', 'table-striped');
     tableNew1.classList.remove('woocommerce-table');
-
-
-
-
 </Script>
 
 
