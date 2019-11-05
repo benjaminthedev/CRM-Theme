@@ -26,7 +26,7 @@ do_action( 'woocommerce_before_account_orders', $has_orders ); ?>
 
 <?php if ( $has_orders ) : ?>
 
-	<table class="woocommerce-orders-table woocommerce-MyAccount-orders shop_table shop_table_responsive my_account_orders account-orders-table">
+	<table class="table table-striped">
 		<thead>
 			<tr>
 				<?php foreach ( wc_get_account_orders_columns() as $column_id => $column_name ) : ?>
@@ -130,3 +130,13 @@ do_action( 'woocommerce_before_account_orders', $has_orders ); ?>
 </a>
 
 <?php do_action( 'woocommerce_after_account_orders', $has_orders ); ?>
+
+
+<style>
+	.table td, .table th{
+		text-align:center;
+	}
+	a.btn.btn-danger {
+    	margin-top: 100px;
+	}
+</style>

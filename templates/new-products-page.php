@@ -19,7 +19,7 @@ if (have_posts())
 
             <div class="row">
                 <div class="col-md-12">
-                <h1> Price List</h1>
+                
                 <?php the_content(); ?>
                 
 </div>
@@ -31,27 +31,7 @@ if (have_posts())
 
 
 
-                <div class="row text-center flex-align-lg-center ">
-
-                    <div class="<?php echo has_post_thumbnail() ? 'col-lg-8 ' : 'col-xs-12'; ?>">
-
-                        <h1><?php //the_title(); ?></h1>
-
-                        <?php //the_content(); ?>
-
-                    </div>
-
-                    <?php if (has_post_thumbnail()) : ?>
-
-                        <div class="col-lg-4 flex-lg-first text-left">
-
-                            <?php the_post_thumbnail('full'); ?>
-
-                        </div>
-
-                    <?php endif; ?>
-
-                </div>
+      
 
             </div>
 
