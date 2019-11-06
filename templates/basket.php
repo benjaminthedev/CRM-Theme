@@ -45,7 +45,6 @@ if (have_posts())
 
         <script>
              // finding .single-product tr and killing link
-            console.log('link_kill co,ming up');
             const link_kill = document.querySelectorAll('td.product-name a');
             console.log(link_kill);
 
@@ -53,6 +52,15 @@ if (have_posts())
                 console.log(link_kill);
                 link_kill.removeAttribute("href");
             });
+
+            // Adding class to table
+            const tableNeww = document.querySelector('.woocommerce-cart-form__contents');
+
+            tableNeww.classList.remove('shop_table');
+            tableNeww.classList.add('table', 'table-striped');
+            tableNeww.classList.remove('woocommerce-table');
+
+            
         </script>
 
         <?php if(have_rows('team')) get_section('team_section'); ?>

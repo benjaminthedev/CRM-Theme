@@ -14406,19 +14406,21 @@ h3#ship-to-different-address {
 
 .page-id-20 td.product-thumbnail {
     max-width: 10% !important;
-    width: 10% !important;
+    width: 5% !important;
 }
 
-.page-id-20 table.shop_table.shop_table_responsive {margin-bottom: 40px;background: #f0e3da;}
+.page-id-20 table.shop_table.shop_table_responsive {margin-bottom: 40px; background:none!important;}
 
 .page-id-20 .cart-collaterals {
     /* background: #f0e3da; */
     padding: 30px 0px;
+    background: none !important;
 }
 
 .page-id-20 form.woocommerce-cart-form {
     padding: 41px 0;
-    background: #f0e3da;
+    /* background: #f0e3da; */
+    background: none !important;
 }
 
 .page-id-20 li.wc_payment_method.payment_method_bacs {
@@ -14478,7 +14480,15 @@ ul.woocommerce-order-overview.woocommerce-thankyou-order-details.order_details l
 
 /*--  Billing Page  --*/
 
-input#billing_company,
+input#billing_first_name,
+input#billing_address_1,
+input#billing_city,
+input#billing_postcode,
+input#billing_phone{
+    margin-right:10px;
+}
+
+
 input#billing_first_name,
 input#billing_last_name,
 input#billing_address_1,
@@ -14488,6 +14498,22 @@ input#billing_state,
 input#billing_postcode,
 input#billing_phone,
 input#billing_email{
+    width:49.5%;
+    float:left;
+    margin-bottom: 20px;
+    padding: 1.4rem .75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #464a4c;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border: 0 solid rgba(0, 0, 0, .15);
+    border-radius: 0;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+input#billing_company{
     text-align:center;
     display: block;
     width: 100%;
