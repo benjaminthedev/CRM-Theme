@@ -59,17 +59,13 @@ $avatar = get_avatar(get_current_user_id(), 470);
 
 <Script>
     //table table-striped
-    
     const tableNew1 = document.querySelector('.woocommerce-table--order-details');
 
     tableNew1.classList.remove('shop_table');
 
-
-
     tableNew1.classList.add('table', 'table-striped');
     tableNew1.classList.remove('woocommerce-table');
 </Script>
-
 
 
 <style>
