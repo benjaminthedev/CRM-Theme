@@ -66,9 +66,29 @@ function quantity_inputs_for_woocommerce_loop_add_to_cart_link( $html, $product 
 //Orders
 add_filter('woocommerce_thankyou_order_received_text', 'woo_change_order_received_text', 10, 2 );
 function woo_change_order_received_text( $str, $order ) {
-    $new_str = 'Thank You Page<br />Thank you for your order.<br />Our dedicated sales team will be in touch within 24 hours.';
+    $new_str = 'Thank you for your order.<br />Our dedicated sales team will be in touch within 24 hours.<br />For any queries about your order please <a href="/contact/">contact us.</a> ';
     return $new_str;
 }
 
+
+
+//Checked false different address checkout
+add_filter( 'woocommerce_ship_to_different_address_checked', '__return_false' );
+
+add_filter( 'woocommerce_cart_item_name', 'showing_sku_in_cart_items', 99, 3 );
+function showing_sku_in_cart_items( $item_name, $cart_item, $cart_item_key  ) {
+    // The WC_Product object
+    $product = $cart_item['data'];
+    // Get the  SKU
+    $sku = $product->get_sku();
+
+    // When sku doesn't exist
+    if(empty($sku)) return $item_name;
+
+    // Add the sku
+    $item_name .= '<br><small class="product-sku">' . __( "SKU: ", "woocommerce") . $sku . '</small>';
+
+    return $item_name;
+}
 
 ?>
