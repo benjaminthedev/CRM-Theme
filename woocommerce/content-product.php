@@ -188,18 +188,7 @@ tablesHeading[0].style.display = "contents";
     .add-to-cart .new-add-to-cart .woocommerce a.button{
         padding: 10px !important;
     }
-
-
-
-
-
-
-
-
     /*-- Removing Styles End --*/
-
-
-
 
     .wk_quick_order_box {
     margin: 0;

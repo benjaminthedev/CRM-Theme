@@ -59,8 +59,6 @@ if (have_posts())
             tableNeww.classList.remove('shop_table');
             tableNeww.classList.add('table', 'table-striped');
             tableNeww.classList.remove('woocommerce-table');
-
-            
         </script>
 
         <?php if(have_rows('team')) get_section('team_section'); ?>

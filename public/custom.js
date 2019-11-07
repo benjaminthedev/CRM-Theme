@@ -15,11 +15,6 @@ checkout_kill.forEach(function (checkout_kill) {
     checkout_kill.classList.remove("col-1");
 });
 
-
-
-
-
-
 //Menu - Adding a class
 let findMenuCheckOut = document.querySelector('.wpmenucartli');
 console.log(findMenuCheckOut);
