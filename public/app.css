@@ -14381,7 +14381,9 @@ h3#ship-to-different-address {
 .woocommerce-message, 
 .woocommerce-error, 
 .woocommerce-info {
-	background: #b33f62 !important;
+	background-color: #d32041;
+    padding: 20px 0;
+    color: #fff;
 }
 /*** ORDER NOTES ON CHECKOUT ***/
 .woocommerce-checkout .woocommerce form .form-row textarea {
@@ -14403,6 +14405,15 @@ h3#ship-to-different-address {
 	height: 46px; /* you may need to change this based on your font size */
 }
 
+li.wc_payment_method.payment_method_bacs {
+    list-style-type: none;
+    width: 100%;
+    
+}
+
+ul.wc_payment_methods.payment_methods.methods {
+    padding: 0px;
+}
 
 .page-id-20 td.product-thumbnail {
     max-width: 10% !important;
@@ -14440,7 +14451,10 @@ ul.woocommerce-order-overview.woocommerce-thankyou-order-details.order_details l
 
 
 
-
+.faq_blocks h3 {
+    font-size: 23px;
+    font-weight: 700;
+}
 
 /* -- Billing page -- */
 
@@ -14485,7 +14499,7 @@ input#billing_address_1,
 input#billing_city,
 input#billing_postcode,
 input#billing_phone{
-    margin-right:10px;
+    margin-right:7px;
 }
 
 
@@ -14495,9 +14509,9 @@ input#billing_address_1,
 input#billing_address_2,
 input#billing_city,
 input#billing_state,
-input#billing_postcode,
 input#billing_phone,
-input#billing_email{
+input#billing_email,
+span.select2-selection.select2-selection--single{
     width:49.5%;
     float:left;
     margin-bottom: 20px;
@@ -14513,7 +14527,8 @@ input#billing_email{
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-input#billing_company{
+input#billing_company,
+input#billing_postcode{
     text-align:center;
     display: block;
     width: 100%;

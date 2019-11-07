@@ -65,7 +65,6 @@ $price_html_text = $rrp_html ? '' : '';
 
       
       <td class="quantity-available">
-          Quantity available
           <?php echo $product->get_stock_quantity(); ?>
       </td>
 
@@ -110,7 +109,7 @@ $price_html_text = $rrp_html ? '' : '';
 
 
     <td>
-        <div class="add-to-cart "><?php
+        <div class="add-to-cart new-add-to-cart"><?php
                 echo sprintf( '<a href="%s" data-quantity="1" class="%s" %s>%s</a>',
                     esc_url( $product->add_to_cart_url() ),
                     esc_attr( implode( ' ', array_filter( array(
@@ -159,16 +158,41 @@ tablesHeading[0].style.display = "contents";
         width: 18%;
     }
     td.imagess {
-        width: 10%;      
+        width: 7%;      
     
     }
     td.titles{
-        width:60%;
+        width:34%;
     }
 
     .main-section-one {
             background: #fff;
     }
+
+    td.quantity-available {
+        width: 10%;
+    }
+    td.quant {
+        width: 10%;
+    }
+    .page-id-5380 input[type="number"] {
+        width: 50%;
+    }
+
+    /* Add to cart custom */
+
+    .add-to-cart.new-add-to-cart {
+        padding-top: 10px;
+    }
+
+    .add-to-cart .new-add-to-cart .woocommerce a.button{
+        padding: 10px !important;
+    }
+
+
+
+
+
 
 
 
