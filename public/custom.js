@@ -16,9 +16,12 @@ checkout_kill.forEach(function (checkout_kill) {
 });
 
 //Menu - Adding a class
-const findMenuCheckOut = document.querySelector('.wpmenucartli');
+let findMenuCheckOut = document.querySelector('.wpmenucartli');
 console.log(findMenuCheckOut);
 
 findMenuCheckOut.classList.add('menu_button');
 console.log('class added');
 console.log(findMenuCheckOut);
+
+//shop_table woocommerce-checkout-review-order-table
+

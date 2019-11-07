@@ -42,6 +42,24 @@ if (have_posts())
             </div>
 
         </section>
+<script>
+    //woocommerce-table--order-details - when order had be ordered.
+    let newTablesOrder = document.querySelector('.woocommerce-table');
+
+    newTablesOrder.classList.remove('shop_table');
+    newTablesOrder.classList.add('table', 'table-striped');
+    newTablesOrder.classList.remove('woocommerce-table');
+</script>
+
+<style>
+    th.woocommerce-table__product-table.product-total,
+    th.woocommerce-table__product-name.product-name  {
+        text-align: center;
+    }
+    section.woocommerce-customer-details {
+        display: none;
+    }
+</style>
 
         <?php if(have_rows('team')) get_section('team_section'); ?>
 
@@ -52,3 +70,4 @@ get_section('new_arrivals');
 get_section('contact_form');
 
 get_footer();
+

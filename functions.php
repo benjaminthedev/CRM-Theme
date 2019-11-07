@@ -63,7 +63,12 @@ function quantity_inputs_for_woocommerce_loop_add_to_cart_link( $html, $product 
 }
 
 
-
+//Orders
+add_filter('woocommerce_thankyou_order_received_text', 'woo_change_order_received_text', 10, 2 );
+function woo_change_order_received_text( $str, $order ) {
+    $new_str = 'Thank You Page<br />Thank you for your order.<br />Our dedicated sales team will be in touch within 24 hours.';
+    return $new_str;
+}
 
 
 ?>
